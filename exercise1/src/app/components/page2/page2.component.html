@@ -1,0 +1,26 @@
+<a routerLink="/">go to producten</a>
+
+<p>page2 works!</p>
+
+
+<!-- <p>onze data:</p>
+<p>{{ apiData.userId }}</p>
+<p>{{ apiData.id }}</p>
+<p>{{ apiData.title }}</p>
+<p>{{ apiData.completed }}</p> -->
+
+<form [formGroup]="profileForm" (ngSubmit)="SubmitForm()">
+
+  <label for="first-name">First Name: </label>
+  <input id="first-name" type="text" formControlName="firstName">
+
+  <label for="last-name">Last Name: </label>
+  <input id="last-name" type="text" formControlName="lastName">
+
+  <button>Submit</button>
+
+</form>
+
+
+<p>Hello {{Name}} {{LastName}}</p>
+

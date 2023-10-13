@@ -1,0 +1,4 @@
+<a routerLink="/page2">Ga naar page2</a>
+<div id="productenWrapper" *ngFor="let product of producten">
+    <app-product appHighlight *ngIf="product.amount > 0" [product]="product" (productClicked)="updateProducten($event)"></app-product>
+</div>  
